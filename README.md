@@ -4,10 +4,15 @@
 > A multi-agent AI system that autonomously monitors live financial markets, detects volatility spikes and price anomalies in real-time, and generates AI-powered incident reports — with zero human intervention.
 
 ![Status](https://img.shields.io/badge/status-live-brightgreen)
-![Python](https://img.shields.io/badge/python-3.9-blue)
+![Python](https://img.shields.io/badge/python-3.11-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104-teal)
 ![React](https://img.shields.io/badge/React-18-61dafb)
 ![LLM](https://img.shields.io/badge/LLM-Nvidia%20Nemotron-76b900)
+![Deploy FE](https://img.shields.io/badge/frontend-Vercel-black)
+![Deploy BE](https://img.shields.io/badge/backend-Railway-purple)
+
+**Live Demo:** https://riskpulse-ai.vercel.app  
+**API:** https://riskpulse-ai-production.up.railway.app/health
 
 ---
 
