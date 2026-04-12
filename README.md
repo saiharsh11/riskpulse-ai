@@ -163,6 +163,4 @@ Every 60 seconds (autonomous, no human trigger):
 6. Broadcast         →  push full snapshot to all WebSocket clients
 ```
 
----
 
-*Built for Deriv AI Engineer Interview — demonstrating real-time AI pipelines, multi-agent systems, and autonomous decision-making.*
