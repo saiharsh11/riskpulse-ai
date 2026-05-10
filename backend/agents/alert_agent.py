@@ -43,12 +43,11 @@ Anomaly Analysis:
 - Z-Score: {anomaly.get('z_score', 0)}
 - Last Move: {anomaly.get('last_return_pct', 0)}% ({anomaly.get('direction', 'unknown')})
 
-Write a concise incident report with:
-1. What is happening (1-2 sentences)
-2. Why this is significant (1 sentence)
-3. Recommended action for traders (1 sentence)
+Output only the incident report as plain text. No reasoning, no meta-commentary, no labels, no bullet points. Three sentences maximum. Under 100 words. Professional tone.
 
-Keep it professional, factual, and under 100 words total. Do not use bullet points, just plain paragraphs."""
+Sentence 1-2: What is happening.
+Sentence 3: Why this is significant.
+Sentence 4: Recommended action for traders."""
 
     try:
         response = client.chat.completions.create(
