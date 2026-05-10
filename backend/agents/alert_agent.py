@@ -52,7 +52,7 @@ Keep it professional, factual, and under 100 words total. Do not use bullet poin
 
     try:
         response = client.chat.completions.create(
-            model="nvidia/nemotron-3-super-120b-a12b:free",
+            model="z-ai/glm-4.5-air:free",
             max_tokens=200,
             messages=[{"role": "user", "content": prompt}],
         )
