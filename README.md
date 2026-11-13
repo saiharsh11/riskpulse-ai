@@ -1,4 +1,4 @@
-<a href="https://riskpulse-ai.vercel.app"><img src=".github/assets/hero.svg" alt="RiskPulse AI: a calm, clear look at the markets" width="100%"></a>
+<a href="https://riskpulse-ai.vercel.app"><img src=".github/assets/banner.svg" alt="RiskPulse AI: a calm, clear look at the markets" width="100%"></a>
 
 # RiskPulse AI
 
