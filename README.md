@@ -1,3 +1,5 @@
+<a href="https://riskpulse-ai.vercel.app"><img src=".github/assets/hero.svg" alt="RiskPulse AI: a calm, clear look at the markets" width="100%"></a>
+
 # RiskPulse AI
 
 **A small team of AI agents that takes a calm, clear look at the financial markets every day.**
@@ -22,22 +24,8 @@ For each market:
 
 ## How it works
 
-```
-                  ┌──────────────── MCP (stdio) ────────────────┐
- Yahoo Finance ─► │  daily_moves · compare_assets · find_periods │  read-only tools
- (daily closes)   └───────────────▲─────────────────────▲───────┘
-                                  │ tool calls          │ one check
-                       ┌──────────┴─────────┐   ┌───────┴────────┐
-                       │   Risk analyst     │◄──│     Critic     │
-                       │   gpt-oss-120b     │──►│    Qwen 3.8    │
-                       └──────────┬─────────┘   └────────────────┘
-                                  │ rating (JSON)
-                       ┌──────────▼─────────┐
-                       │     Guardrails     │  schema · score band · evidence · no advice
-                       └──────────┬─────────┘
-                                  ▼
-                        FastAPI  /api/board  ──►  React site
-```
+<img src=".github/assets/pipeline.svg" alt="How a rating is made: prices, MCP tools, analyst, guardrail checks, critic, board, website" width="100%">
+
 
 1. **The risk analyst** gets one market and a small set of read-only tools served over the [Model Context Protocol](https://modelcontextprotocol.io). It decides which tools to call, reads the results and returns a structured rating.
 2. **Guardrails** check the answer: valid format, a score inside the level's band, a plain summary, every reason backed by a tool that actually returned evidence, and no buy or sell advice. A rating that fails gets one chance to fix itself.
